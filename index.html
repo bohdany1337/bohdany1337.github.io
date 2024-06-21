@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+        <script>
+            function start() {
+                sjs.open("target", 900, 700);
+                
+                var pong_text = new sjs.Text("Here's my first game - Pong", 28, "blue");
+                pong_text.offset(0, 10);
+                pong_text.centerH();
+                var pongBtn = new sjs.Button("Start Game", function () {
+                    window.location = "Pong/index.html";
+                })
+                pongBtn.centerH().offset(0, 50);
+                
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <h1><center>Bohdan's Portfolio</center></h1>
+        <div id="target" style="margin:auto;background:rgb(255, 202, 202);"></div>
+    </body>
+</html>

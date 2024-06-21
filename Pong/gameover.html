@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Game Over</title>
+        <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+        <script>
+            function start() {
+                sjs.open("target", 900, 700);
+                
+                var startBtn = new sjs.Button("Restart the game", function () {
+                    window.location = "pong.html";
+                })
+                startBtn.center();
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <h1><center>Game Over</center></h1>
+        <div id="target" style="margin:auto;background:rgb(255, 202, 202);"></div>
+    </body>
+</html>
